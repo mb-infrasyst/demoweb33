@@ -18,7 +18,7 @@
                     Currently running on the Azure Web App service and retrieving data from Azure SQL Database.<br>
                     Please view the Wiki project page for more information. <br />
                 </p>
-                <a class="btn btn-primary btn-sm" href="https://github.com/mb-infrasyst/demoweb33/wiki/Wiki:-Azure-DevOps-%E2%80%90-Deploying-to-Azure-Web-App-Service" role="button">Project Wiki</a>
+                @*<a class="btn btn-primary btn-sm" href="https://github.com/mb-infrasyst/demoweb33/wiki/Wiki:-Azure-DevOps-%E2%80%90-Deploying-to-Azure-Web-App-Service" role="button">Project Wiki</a>*@
                 <hr class="my-4">
                 <h4 class="display-6">Employees data from Azure SQL Database</h4>
                 <table class="table table-bordered">
@@ -32,7 +32,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @*FIX DATA ADD INT FOR ID TO DATABASE, MODIFY CODE AND CHECK*@
                         @foreach (var employee in Model.Employees)
                             {
                                 <tr>
