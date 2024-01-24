@@ -9,12 +9,15 @@ namespace DemoWeb33.Pages
     {
         private readonly IEmployeeService _employeeService;
 
+        // 'Employees' is now initialized in the constructor.
+        public List<Employee> Employees { get; private set; }
+
         public IndexModel(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
+            Employees = new List<Employee>(); // Initialize the list
         }
 
-        public List<Employee> Employees;
         public void OnGet()
         {
             Employees = _employeeService.GetEmployees();
